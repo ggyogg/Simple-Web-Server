@@ -2,9 +2,9 @@
 id: xbfy3
 name: Intro to simple server
 file_version: 1.0.2
-app_version: 0.10.0-2
+app_version: 0.10.1-0
 file_blobs:
-  crypto.hpp: c8e8cee90630bca256a0a3943b548401eba2b4a8
+  crypto.hpp: 9a29d6b7ff451bcdcc410f3e999bfb91ccf807f6
 ---
 
 # My first heading
@@ -50,25 +50,6 @@ vjkdfxnbjkvndxjk
 
 
 
-
-<br/>
-
-my second snippet
-<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
-### 📄 crypto.hpp
-```c++
-⬜ 33             BIO *bio, *b64;
-⬜ 34             BUF_MEM *bptr = BUF_MEM_new();
-⬜ 35     
-🟩 36             b64 = BIO_new(BIO_f_base64());
-🟩 37             BIO_set_flags(b64, BIO_FLAGS_BASE64_NO_NL);
-🟩 38             bio = BIO_new(BIO_s_mem());
-🟩 39             BIO_push(b64, bio);
-🟩 40             BIO_set_mem_buf(b64, bptr, BIO_CLOSE);
-⬜ 41     
-⬜ 42             // Write directly to base64-buffer to avoid copy
-⬜ 43             auto base64_length = static_cast<std::size_t>(round(4 * ceil(static_cast<double>(ascii.size()) / 3.0)));
-```
 
 <br/>
 
