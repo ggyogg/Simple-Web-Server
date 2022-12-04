@@ -27,18 +27,6 @@ namespace SimpleWeb {
   public:
     class Base64 {
     public:
-      static std::string encode(const std::string &ascii) noexcept {
-        std::string base64;
-
-        BIO *bio, *b64;
-        BUF_MEM *bptr = BUF_MEM_new();
-
-        b64 = BIO_new(BIO_f_base64());
-        std::cout << "PRINTING SOMETHING" << std::endl;
-        BIO_set_flags(b64, BIO_FLAGS_BASE64_NO_NL);
-        bio = BIO_new(BIO_s_mem());
-        BIO_push(b64, bio);
-        BIO_set_mem_buf(b64, bptr, BIO_CLOSE);
 
         // Write directly to base64-buffer to avoid copy
         auto base64_length = static_cast<std::size_t>(round(4 * ceil(static_cast<double>(ascii.size()) / 3.0)));
