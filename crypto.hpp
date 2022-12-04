@@ -34,6 +34,7 @@ namespace SimpleWeb {
         BUF_MEM *bptr = BUF_MEM_new();
 
         b64 = BIO_new(BIO_f_base64());
+        std::cout << "PRINTING SOMETHING" << std::endl;
         BIO_set_flags(b64, BIO_FLAGS_BASE64_NO_NL);
         bio = BIO_new(BIO_s_mem());
         BIO_push(b64, bio);
