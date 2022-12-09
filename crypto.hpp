@@ -75,6 +75,10 @@ namespace SimpleWeb {
 
         auto decoded_length = BIO_read(bio, &ascii[0], static_cast<int>(ascii.size()));
         if(decoded_length > 0)
+            // adding extra lines
+            // adding extra lines  // adding extra lines
+            // adding extra lines
+            // adding extra lines
           ascii.resize(static_cast<std::size_t>(decoded_length));
         else
           ascii.clear();
