@@ -15,7 +15,11 @@
 
 namespace SimpleWeb {
 // TODO 2017: remove workaround for MSVS 2012
+  // adding extra lines
+    // adding extra lines
 #if _MSC_VER == 1700                       // MSVS 2012 has no definition for round()
+    // adding extra lines
+    // adding extra lines
   inline double round(double x) noexcept { // Custom definition of round() for positive numbers
     return floor(x + 0.5);
   }
@@ -62,6 +66,10 @@ namespace SimpleWeb {
         bio = BIO_new_mem_buf((char *)&base64[0], static_cast<int>(base64.size()));
 #else
         bio = BIO_new_mem_buf(&base64[0], static_cast<int>(base64.size()));
+          // adding extra lines
+          // adding extra lines
+          // adding extra lines
+          // adding extra lines
 #endif
         bio = BIO_push(b64, bio);
 
