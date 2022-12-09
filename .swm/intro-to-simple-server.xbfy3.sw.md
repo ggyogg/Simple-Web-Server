@@ -2,7 +2,7 @@
 id: xbfy3
 name: Intro to simple server
 file_version: 1.0.2
-app_version: 0.10.1-0
+app_version: 0.10.1-2
 file_blobs:
   crypto.hpp: 9a29d6b7ff451bcdcc410f3e999bfb91ccf807f6
 ---
@@ -38,9 +38,6 @@ this is what my main algo does
 
 this is my full doc for my demo
 
-
-
-
 ```c
 khbjdnbksjvnfdjkvndkj
 khfdhjkgj
@@ -48,8 +45,40 @@ khfdhjkgj
 vjkdfxnbjkvndxjk
 ```
 
+hehehhehe
 
+heheh
 
+<br/>
+
+<br/>
+
+check hahahahaah
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 crypto.hpp
+```c++
+⬜ 64             bio = BIO_new_mem_buf(&base64[0], static_cast<int>(base64.size()));
+⬜ 65     #endif
+⬜ 66             bio = BIO_push(b64, bio);
+🟩 67     
+🟩 68             auto decoded_length = BIO_read(bio, &ascii[0], static_cast<int>(ascii.size()));
+🟩 69             if(decoded_length > 0)
+🟩 70               ascii.resize(static_cast<std::size_t>(decoded_length));
+🟩 71             else
+🟩 72               ascii.clear();
+🟩 73     
+🟩 74             BIO_free_all(b64);
+🟩 75     
+🟩 76             return ascii;
+🟩 77           }
+⬜ 78         };
+⬜ 79     
+⬜ 80         /// Return hex string from bytes in input string.
+```
+
+<br/>
+
+<br/>
 
 <br/>
 
