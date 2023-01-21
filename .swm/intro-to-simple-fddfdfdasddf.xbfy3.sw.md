@@ -1,6 +1,6 @@
 ---
 id: xbfy3
-title: Intro to simple server
+title: Intro to simple fddfdfdasddf
 file_version: 1.1.1
 app_version: 1.0.17
 ---
@@ -78,8 +78,6 @@ dasd
 das
 
 d
-
-<br/>
 
 <br/>
 
