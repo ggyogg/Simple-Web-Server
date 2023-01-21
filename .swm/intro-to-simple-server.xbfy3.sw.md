@@ -1,10 +1,8 @@
 ---
 id: xbfy3
-name: Intro to simple server
-file_version: 1.0.2
-app_version: 0.10.1-2
-file_blobs:
-  crypto.hpp: 9a29d6b7ff451bcdcc410f3e999bfb91ccf807f6
+title: Intro to simple server
+file_version: 1.1.1
+app_version: 1.0.17
 ---
 
 # My first heading
@@ -15,19 +13,17 @@ this is what my main algo does
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 crypto.hpp
 ```c++
-⬜ 13     #include <openssl/md5.h>
-⬜ 14     #include <openssl/sha.h>
-⬜ 15     
-🟩 16     namespace SimpleWeb {
-🟩 17     // TODO 2017: remove workaround for MSVS 2012
-🟩 18     #if _MSC_VER == 1700                       // MSVS 2012 has no definition for round()
-🟩 19       inline double round(double x) noexcept { // Custom definition of round() for positive numbers
-🟩 20         return floor(x + 0.5);
-🟩 21       }
-🟩 22     #endif
-⬜ 23     
-⬜ 24       class Crypto {
-⬜ 25         const static std::size_t buffer_size = 131072;
+16     namespace SimpleWeb {
+17     // TODO 2017: remove workaround for MSVS 2012
+18       // adding extra lines
+19         // adding extra lines
+20     #if _MSC_VER == 1700                       // MSVS 2012 has no definition for round()
+21         // adding extra lines
+22         // adding extra lines
+23       inline double round(double x) noexcept { // Custom definition of round() for positive numbers
+24         return floor(x + 0.5);
+25       }
+26     #endif
 ```
 
 <br/>
@@ -57,26 +53,31 @@ check hahahahaah
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 crypto.hpp
 ```c++
-⬜ 64             bio = BIO_new_mem_buf(&base64[0], static_cast<int>(base64.size()));
-⬜ 65     #endif
-⬜ 66             bio = BIO_push(b64, bio);
-🟩 67     
-🟩 68             auto decoded_length = BIO_read(bio, &ascii[0], static_cast<int>(ascii.size()));
-🟩 69             if(decoded_length > 0)
-🟩 70               ascii.resize(static_cast<std::size_t>(decoded_length));
-🟩 71             else
-🟩 72               ascii.clear();
-🟩 73     
-🟩 74             BIO_free_all(b64);
-🟩 75     
-🟩 76             return ascii;
-🟩 77           }
-⬜ 78         };
-⬜ 79     
-⬜ 80         /// Return hex string from bytes in input string.
+76             auto decoded_length = BIO_read(bio, &ascii[0], static_cast<int>(ascii.size()));
+77             if(decoded_length > 0)
+78                 // adding extra lines
+79                 // adding extra lines  // adding extra lines
+80                 // adding extra lines
+81                 // adding extra lines
+82               ascii.resize(static_cast<std::size_t>(decoded_length));
+83             else
+84               ascii.clear();
+85     
+86             BIO_free_all(b64);
+87     
+88             return ascii;
+89           }
 ```
 
 <br/>
+
+dasd
+
+<br/>
+
+das
+
+d
 
 <br/>
 
