@@ -7,6 +7,8 @@ app_version: 1.0.17
 
 # My first heading
 
+jfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnf
+
 <br/>
 
 this is what my main algo does
@@ -94,12 +96,6 @@ fs
 f
 
 s
-
-<br/>
-
-<br/>
-
-<br/>
 
 <br/>
 
