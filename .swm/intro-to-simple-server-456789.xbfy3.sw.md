@@ -2,7 +2,7 @@
 id: xbfy3
 title: Intro to simple server 456789
 file_version: 1.1.1
-app_version: 1.0.17
+app_version: 1.1.4
 ---
 
 # My first heading
@@ -10,6 +10,79 @@ app_version: 1.0.17
 jfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnf
 
 jfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnfjfndknkdnknfjnfdjfjknnnsdvjnfdkjfndjnf
+
+<br/>
+
+<br/>
+
+<br/>
+
+dsfds,fhsdf,sd
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 client_http.hpp
+```c++
+8      #include <unordered_set>
+9      #include <vector>
+10     
+11     #ifdef USE_STANDALONE_ASIO
+12     #include <asio.hpp>
+13     #include <asio/steady_timer.hpp>
+14     namespace SimpleWeb {
+15       using error_code = std::error_code;
+```
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+thso is me
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 http_examples.cpp
+```c++
+9      // Added for the default_resource example
+10     #include <algorithm>
+11     #include <boost/filesystem.hpp>
+12     #include <fstream>
+13     #include <vector>
+14     #ifdef HAVE_OPENSSL
+15     #include "crypto.hpp"
+16     #endif
+```
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+fbmdsf,sd
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 http_examples.cpp
+```c++
+38         // stringstream ss;
+39         // ss << request->content.rdbuf();
+40         // auto content=ss.str();
+41     
+42         *response << "HTTP/1.1 200 OK\r\nContent-Length: " << content.length() << "\r\n\r\n"
+43                   << content;
+44     
+45     
+46         // Alternatively, use one of the convenience functions, for instance:
+```
+
+<br/>
+
+<br/>
+
+<br/>
 
 <br/>
 
@@ -46,6 +119,8 @@ vjkdfxnbjkvndxjk
 ```
 
 hehehhehe
+
+/
 
 heheh
 
@@ -98,8 +173,6 @@ fs
 f
 
 s
-
-<br/>
 
 \--
 
